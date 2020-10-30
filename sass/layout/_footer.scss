@@ -1,0 +1,120 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color);
+
+    .logo {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        color: var(--alternative-color);
+    }
+    
+    .social-icons {
+        justify-content: flex-start;
+        
+        li:not(:last-child) {
+            /* flex-basis: 54px; или (без not) */
+            margin-right: 10px;
+        }
+        
+        a {
+            background-color: rgba(255, 255, 255, 0.1);
+        
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        svg {
+            fill: var(--alternative-color)
+        }
+    }
+    
+    h4 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--alternative-color);
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+.contacts-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+        li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    .link-white {
+        color: var(--alternative-color);  
+    }
+}
+
+.footer-columns {
+    display: flex;
+    align-items: baseline;
+
+    > div {
+        flex-basis: 25%;
+
+        &:last-child {
+            flex-basis: 50%;
+        }
+    }  
+    
+    .subscribe-input {
+        padding-left: 16px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+        /* box-sizing: border-box; */
+        color: rgba(255, 255, 255, 0.6);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+    
+    form {
+        display: flex;
+    }
+    
+    .modal-btn {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        flex-shrink: 0;
+        
+        svg {
+            margin-left: 10px;
+            fill: var(--alternative-color);
+        }
+    }
+}
+
+.subscribe-input {
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

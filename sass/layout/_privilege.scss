@@ -1,0 +1,62 @@
+.privilege {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-privilege {
+    display: flex;
+    
+    li {
+        flex-basis: 25%;
+        
+        &::before {
+            display: block;
+            content: "";
+            background-color: var(--alternative-background-color);
+            height: 120px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            /* background-size: contain; */
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }   
+        
+        &:nth-child(1)::before {
+            background-image: url(../images/svg/antenna_1.svg);
+        }
+        
+        &:nth-child(2)::before {
+            background-image: url(../images/svg/clock_1.svg);
+        }
+        
+        &:nth-child(3)::before {
+            background-image: url(../images/svg/diagram_1.svg);
+        }
+        
+        &:nth-child(4)::before {
+        background-image: url(../images/svg/astronaut_1.svg);
+        }
+        /* либо каждому li присвоить класс */
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+    }  
+}

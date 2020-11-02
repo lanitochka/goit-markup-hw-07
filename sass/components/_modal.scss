@@ -27,7 +27,7 @@
     
     width: 528px;
     height: 581px;
-    background: var(--alternative-color);
+    background: $alternative-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;   
 
@@ -43,13 +43,13 @@
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: var(--alternative-color);
+    background-color: $alternative-color;
     cursor: pointer;
     
     &:hover,
     &:focus {
         svg {
-            fill: var(--accent-color);
+            fill: $accent-color;
         }
     }
 }
@@ -73,11 +73,11 @@
     
     &:focus {
         outline: none;
-        border: 1px solid var(--accent-color);
+        border: 1px solid $accent-color;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         + svg {
-            fill: var(--accent-color);
+            fill: $accent-color;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
@@ -144,7 +144,7 @@
 
 .checkbox:checked + .policy::before {
     background-image: url(../images/svg/checkbox-icon.svg);
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: none;
     background-repeat: no-repeat;
     background-position: center;

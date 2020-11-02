@@ -1,13 +1,13 @@
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--background-color);
+    background-color: $background-color;
 
     .logo {
         display: inline-block;
         margin-bottom: 20px;
         margin-right: 0px;
-        color: var(--alternative-color);
+        color: $alternative-color;
     }
     
     .social-icons {
@@ -25,7 +25,7 @@ footer {
         }
         
         svg {
-            fill: var(--alternative-color)
+            fill: $alternative-color;
         }
     }
     
@@ -36,7 +36,7 @@ footer {
         line-height: 1.143;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--alternative-color);
+        color: $alternative-color;
     }
 }
 
@@ -62,7 +62,7 @@ address {
     }
     
     .link-white {
-        color: var(--alternative-color);  
+        color: $alternative-color;  
     }
 }
 
@@ -102,7 +102,7 @@ address {
         
         svg {
             margin-left: 10px;
-            fill: var(--alternative-color);
+            fill: $alternative-color;
         }
     }
 }
@@ -110,7 +110,7 @@ address {
 .subscribe-input {
     &:focus {
         outline: none;
-        border: 1px solid var(--accent-color);
+        border: 1px solid $accent-color;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     

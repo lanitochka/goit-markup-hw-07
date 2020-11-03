@@ -388,7 +388,8 @@ h2 {
   border: 1px solid #2196F3;
 }
 
-.clients-list a:hover svg, .clients-list a:focus svg {
+.clients-list a:hover svg,
+.clients-list a:focus svg {
   fill: #2196F3;
 }
 
@@ -688,7 +689,8 @@ address {
   background-color: #2196F3;
 }
 
-.social-icons a:hover svg, .social-icons a:focus svg {
+.social-icons a:hover svg,
+.social-icons a:focus svg {
   fill: #FFFFFF;
 }
 
